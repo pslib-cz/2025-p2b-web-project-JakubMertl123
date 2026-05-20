@@ -116,6 +116,24 @@ img {
   cursor: pointer;
   color: var(--text-color);
   padding: 0;
+  z-index: 1001;
+}
+
+.mobile-toggle line {
+  transition: transform var(--transition), opacity var(--transition);
+  transform-origin: 12px 12px;
+}
+
+.mobile-toggle.open line:nth-child(1) {
+  transform: rotate(45deg) translateY(6px);
+}
+
+.mobile-toggle.open line:nth-child(2) {
+  opacity: 0;
+}
+
+.mobile-toggle.open line:nth-child(3) {
+  transform: rotate(-45deg) translateY(-6px);
 }
 
 .hero-section {
@@ -573,17 +591,28 @@ img {
 
 @media (max-width: 768px) {
 
+  .site-header {
+    padding: 35px 0 20px 0;
+  }
+
+  nav {
+    position: absolute;
+  }
+
+  .nav-container {
+    width: 80%;
+  }
+
   .mobile-toggle {
     display: block;
-    transform: translateX(10px);
   }
 
   .nav-links {
     position: fixed;
-    top: 80px;
+    top: 95px;
     left: -100%;
     width: 100%;
-    height: calc(100vh - 80px);
+    height: calc(100vh - 95px);
     background-color: var(--bg-color);
     flex-direction: column;
     align-items: center;

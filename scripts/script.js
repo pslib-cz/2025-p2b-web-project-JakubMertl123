@@ -6,12 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (mobileToggle && navLinks) {
         mobileToggle.addEventListener('click', () => {
             navLinks.classList.toggle('nav-active');
-
-            if (navLinks.classList.contains('nav-active')) {
-                mobileToggle.innerHTML = '&#10005;'; // Close icon
-            } else {
-                mobileToggle.innerHTML = '&#9776;'; // Hamburger icon
-            }
+            mobileToggle.classList.toggle('open');
         });
     }
 
