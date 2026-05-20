@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <link rel="icon" type="image/x-icon" href="logos/favicon.svg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container nav-container">
+            <a href="index.html" class="site-logo" aria-label="KM Logo">
+                <img src="logos/Logo_KM.svg" alt="KM Logo" class="logo-img">
+            </a>
+            <button class="mobile-toggle" aria-label="Toggle navigation">
+                <svg viewBox="0 0 24 24" width="48" height="48" stroke="currentColor" stroke-width="2.5" fill="none">
+                    <line x1="2" y1="6" x2="22" y2="6"></line>
+                    <line x1="2" y1="12" x2="22" y2="12"></line>
+                    <line x1="2" y1="18" x2="22" y2="18"></line>
+                </svg>
+            </button>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Úvod</a></li>
+                    <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                    <li><a href="contact.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main-content container portfolio-page">
+        <h1 class="page-title">Moje portfolio</h1>
+        <section class="portfolio-category-section">
+            <h2 class="category-title">Sport</h2>
+            <div class="photo-grid grid-sport">
+                <div class="placeholder-box photo-item sport-img-1">Obrázek</div>
+                <div class="placeholder-box photo-item sport-img-2">Obrázek</div>
+                <div class="placeholder-box photo-item sport-img-3">Obrázek</div>
+                <div class="placeholder-box photo-item sport-img-4">Obrázek</div>
+                <div class="placeholder-box photo-item sport-img-5">Obrázek</div>
+            </div>
+            <a href="#" class="btn-more">Více ze sportu</a>
+        </section>
+        <section class="portfolio-category-section">
+            <h2 class="category-title">Portréty</h2>
+            <div class="photo-grid grid-portrety">
+                <div class="placeholder-box photo-item">Obrázek</div>
+                <div class="placeholder-box photo-item">Obrázek</div>
+                <div class="placeholder-box photo-item">Obrázek</div>
+                <div class="placeholder-box photo-item">Obrázek</div>
+            </div>
+            <a href="#" class="btn-more">Další portréty zde</a>
+        </section>
+        <section class="portfolio-category-section">
+            <h2 class="category-title">Cestování</h2>
+            <div class="photo-grid grid-cestovani">
+                <div class="placeholder-box photo-item cestovani-img-1">Obrázek</div>
+                <div class="placeholder-box photo-item cestovani-img-2">Obrázek</div>
+                <div class="placeholder-box photo-item cestovani-img-3">Obrázek</div>
+            </div>
+            <a href="#" class="btn-more">Zaujalo? Mrkni na zbytek</a>
+        </section>
+
+    </main>
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Kontakt</h3>
+                    <ul>
+                        <li>+420 123 456 789</li>
+                        <li>jakub.mertl.024@pslib.cz</li>
+                        <li>Jakub Měrtl</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Navigace</h3>
+                    <ul>
+                        <li><a href="index.html">Úvod</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Sledujte mě</h3>
+                    <ul>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Zonerama</a></li>
+                        <li><a href="#">Github</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <hr class="footer-line">
+                <a href="index.html" class="site-logo footer-logo" aria-label="KM Logo">
+                    <img src="logos/Logo_KM_white.svg" alt="KM Logo" class="logo-img">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>
